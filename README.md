@@ -128,11 +128,15 @@ val awesome: Boolean = when (lang) {
 ### for
 ```ts
 // typescript
-for (var x=0; x<10; x++){
+for (var x=0; x<=10; x++){
+  console.log(x);
+}
+for (var x=10; x>0; x--){
   console.log(x);
 }
 ```
 ```kt
 // kotlin
 for (item in 0..10) println(item)
+for (item in 10 downTo 0) println(item)
 ```
