@@ -82,9 +82,16 @@ if (condition) {
 } else {
   // ...
 }
+
+val awesome: Boolean = if (lang === "kotlin") {
+  true
+} else {
+  false
+}
 ```
 
 ### switch (when)
+> https://kotlinlang.org/docs/control-flow.html#when-expression
 ```ts
 // typescript
 switch (value) {
@@ -102,12 +109,17 @@ switch (value) {
 ```kt
 // kotlin
 when (value) {
-  '1' -> {
+  "1" -> {
    // or return
   }
-  '2' -> 'result 2'
+  "2" -> "result 2
   else -> {
     // ...
   }
+}
+
+val awesome: Boolean = when (lang) {
+  "kotlin" -> true
+  else -> false
 }
 ```
