@@ -123,3 +123,16 @@ val awesome: Boolean = when (lang) {
   else -> false
 }
 ```
+
+## 반복문
+### for
+```ts
+// typescript
+for (var x=0; x<10; x++){
+  console.log(x);
+}
+```
+```kt
+// kotlin
+for (item in 0..10) println(item)
+```
