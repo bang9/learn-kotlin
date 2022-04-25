@@ -70,3 +70,44 @@ const len = nullable?.length ?? 0;
 // kotlin
 val len = nullable?.length ?: 0;
 ```
+
+## 조건문
+### if-else
+```kt
+// 동일
+if (condition) {
+  // ...
+} else if (condition2) {
+  // ...
+} else {
+  // ...
+}
+```
+
+### switch (when)
+```ts
+// typescript
+switch (value) {
+  case '1': {
+    break; // or return
+  }
+  case '2': {
+    return 'result 2';
+  }
+  default: {
+    // ...
+  }
+}
+```
+```kt
+// kotlin
+when (value) {
+  '1' -> {
+   // or return
+  }
+  '2' -> 'result 2'
+  else -> {
+    // ...
+  }
+}
+```
