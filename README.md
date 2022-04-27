@@ -141,8 +141,8 @@ for (item in 0..10) println(item)
 for (item in 10 downTo 0) println(item)
 ```
 
-# 코틀린에서 지원되는 문법
-## Labmda 에서의 암시적 파라메터 네이밍
+## 코틀린에서 지원되는 문법
+### Labmda 에서의 암시적 파라메터 네이밍
 ```kt
 ints.filter { it > 0 }
 ```
