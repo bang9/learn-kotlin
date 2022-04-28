@@ -30,6 +30,13 @@ foo = 4
 ```
 ## 타입
 
+### Booleans
+> operations, `||` and `&&` work lazily (계산하고 평가한 이후에 조건에 부합하지 않으면 다음 계산을 실행한다.)
+- `||` OR
+- `&&` AND
+- `!` NOT
+- 
+
 ### Numbers
 
 #### Integer types
@@ -253,3 +260,22 @@ ints.filter { it > 0 }
 ```swift
 ints.filter { $0 > 0 }
 ```
+
+### lateinit & lazy
+```kt
+lateinit var time: String // 타입은 Nullable 하지 않을 수 있다.
+// 한참 뒤..
+time = "Late init time"
+
+
+var time: String by lazy {
+  "Lazy time"
+}
+override fun onCreate(...) {
+  textView.text = time // 이 시점에 초기화
+}
+```
+
+# Articles
+- https://blog.yena.io/studynote/2020/05/27/Android-Kotlin-Init.html
+- https://zion830.tistory.com/132
