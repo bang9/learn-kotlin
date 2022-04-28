@@ -30,6 +30,29 @@ foo = 4
 ```
 ## 타입
 
+### Arrays
+```kt
+val asc = Array(5) { i -> (i * i).toString() }
+val x = arrayOf(1,2,3) // [1,2,3]
+val arr = IntArray(5) // [0,0,0,0,0]
+val arr = IntArray(5) { 42 } // [42,42,42,42,42]
+```
+
+### Strings
+> `String` type, Double quote 를 사용한다. "1"
+- 인덱스로 `Char` 접근 가능 `str[i]`
+- Raw String 이라는 게 있고, 삼중 따옴표 사용 `"""` js 의 literal template 과 비슷하게 공백과 new line을 유지함
+- String templates
+  - print("$변수명")
+  - print("${코드}")
+
+### Characters
+> `Char` type, Single quote 를 사용한다 '1'
+- 특수문자는 Escape(\) 로 시작한다
+  - `\t`, `\b`, `\n`, `\r`, `\'`, `\"`, `\\` and `\$`.
+  - 유니코드 `'\uFF00' 형태로 표현 가능
+  - `Char.digitToInt(radix: Int)` 메소드 내장
+
 ### Booleans
 > operations, `||` and `&&` work lazily (계산하고 평가한 이후에 조건에 부합하지 않으면 다음 계산을 실행한다.)
 - `||` OR
