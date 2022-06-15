@@ -299,7 +299,7 @@ override fun onCreate(...) {
 }
 ```
 
-### apply / let / run
+### apply / let / run / also 
 ![image](https://user-images.githubusercontent.com/26326015/173870631-679aa961-741a-4225-a072-1733df55a570.png)
 
 
@@ -307,3 +307,4 @@ override fun onCreate(...) {
 - https://blog.yena.io/studynote/2020/05/27/Android-Kotlin-Init.html
 - https://zion830.tistory.com/132
 - https://gun0912.tistory.com/81
+- https://medium.com/androiddevelopers/kotlin-standard-functions-cheat-sheet-27f032dd4326
